@@ -11,32 +11,75 @@
     <!-- ! ============== Navbar Start ================ -->
     <div class="navbar">
       <img src="./img/instagram-logo.png" alt="logo" style="width: 200px" />
-      <input class="inp-search" type="search" placeholder="Поиск" />
+      <input class="inp-search" type="text" placeholder="Поиск" />
       <div>
         <img src="./img/home-logo.webp" alt="home" style="width: 50px" />
         <img src="./img/facebook-logo.png" alt="facebook" style="width: 40px" />
-        <img src="./img/add-logo.webp" alt="add" style="width: 50px" />
+        <img
+          id="newPost"
+          src="./img/add-logo.webp"
+          alt="add"
+          style="width: 50px"
+        />
         <img src="./img/like-logo.png" alt="like" style="width: 40px" />
       </div>
     </div>
     <hr />
     <!-- ? ============== Navbar End ================== -->
+    <!-- ! ===== person-info start ===== -->
+    <section class="container">
+      <div class="preson-info__img">
+        <img src="./img/4316602d5ed1c62195ffd7fd86f7af02.jpg" alt="" />
+      </div>
+      <div class="person-info__title">
+        <span class="title__profile">cristiano</span>
+        <img id="offic_icon" src="./img/icon_ok.png" alt="" />
+        <button class="title__follow">Подписаться</button>
+        <button class="title__massage">Оправить сообщение</button>
+      </div>
+    </section>
+    <!-- ? ===== person-info end ===== -->
+
+    <!-- ! ===== Create Start ===== -->
+    <section class="posts__add">
+      <div>
+        <input type="url" class="posts__add_img" placeholder="URL фотографии" />
+        <br />
+        <input type="text" class="posts__add_txt" placeholder="Описание" />
+        <br />
+        <button class="posts__add_btn">Добавить</button>
+      </div>
+    </section>
+
+    <!-- ? ===== Create End ===== -->
+
+    <!-- ! ====== Posts Start ====== -->
+    <div class="posts"></div>
+    <!-- ? ====== Posts End ====== -->
+
+    <!--! main-modal start -->
+    <div class="main-modal">
+      <div>
+        <input
+          type="url"
+          class="posts__edit_img"
+          placeholder="URL фотографии"
+        />
+        <br />
+        <input type="text" class="posts__edit_txt" placeholder="Описание" />
+        <br />
+        <button class="posts__edit_btn">Изменить</button>
+        <button class="posts__close_btn">Закрыть</button>
+      </div>
+    </div>
+    <!--? main-modal end -->
+
     <!-- ! ========== Paginate Start ====== -->
     <div class="paginate">
       <button id="prev-btn">prev</button>
       <button id="next-btn">next</button>
     </div>
     <!-- ? ========== Paginate End ====== -->
-    <!-- ! ============= Footer Start ============= -->
-    <footer class="footer">
-      <h3>Contact with me</h3>
-      <div class="img">
-        <div><img src="./img/facebook-hakaton.webp" alt="facebook" /></div>
-        <div><img src="./img/twitter-hakaton.png" alt="twitter" /></div>
-        <div><img src="./img/youtube-hakaton.svg" alt="youtube" /></div>
-      </div>
-    </footer>
-    <!-- ?============== Footer End =============== -->
     <script src="./js/main.js"></script>
   </body>
 </html>

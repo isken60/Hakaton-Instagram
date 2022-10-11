@@ -61,22 +61,61 @@
 }
 /*? person-info end */
 
-/* ! Footer Start */
-.footer {
-  background-color: darkgray;
-}
-.footer h3 {
-  color: white;
-  text-align: center;
-  font-weight: 100;
-}
-.img img {
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
-}
-.img {
+/*! ===== Posts start ===== */
+.posts {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-/* ? Footer End */
+
+.posts__img {
+  margin-right: 50px;
+}
+
+.posts__add {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 650px;
+  width: 200px;
+  height: 50px;
+  background-color: burlywood;
+  text-align: center;
+  display: none;
+}
+/*? ===== Posts end ===== */
+/* ! main-modal start */
+.main-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(194, 190, 190);
+  position: fixed;
+  top: 0;
+  text-align: center;
+  opacity: 0.9;
+  display: none;
+}
+
+.main-modal div {
+  margin-top: 150px;
+}
+
+.posts__edit_img,
+.posts__edit_txt {
+  width: 20%;
+  height: 30px;
+}
+
+.paginate {
+  display: flex;
+  justify-content: center;
+}
+
+#prev-btn,
+#next-btn {
+  margin: 20px 10px;
+  width: 200px;
+  background-color: darkgreen;
+  color: white;
+}
+/* ? main-modal start */
