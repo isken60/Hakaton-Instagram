@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inp-search {
+  width: 200px;
+  height: 40px;
+  margin-top: 5px;
+}
