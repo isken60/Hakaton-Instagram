@@ -11,11 +11,16 @@
     <!-- ! ============== Navbar Start ================ -->
     <div class="navbar">
       <img src="./img/instagram-logo.png" alt="logo" style="width: 200px" />
-      <input class="inp-search" type="search" placeholder="Поиск" />
+      <input class="inp-search" type="text" placeholder="Поиск" />
       <div>
         <img src="./img/home-logo.webp" alt="home" style="width: 50px" />
         <img src="./img/facebook-logo.png" alt="facebook" style="width: 40px" />
-        <img src="./img/add-logo.webp" alt="add" style="width: 50px" />
+        <img
+          id="newPost"
+          src="./img/add-logo.webp"
+          alt="add"
+          style="width: 50px"
+        />
         <img src="./img/like-logo.png" alt="like" style="width: 40px" />
       </div>
     </div>
@@ -35,7 +40,47 @@
       </div>
     </section>
     <!-- ? ===== person-info end ===== -->
-    <div>jksfdlfsd</div>
+
+    <!-- ! ===== Create Start ===== -->
+    <section class="posts__add">
+      <div>
+        <input type="url" class="posts__add_img" placeholder="URL фотографии" />
+        <br />
+        <input type="text" class="posts__add_txt" placeholder="Описание" />
+        <br />
+        <button class="posts__add_btn">Добавить</button>
+      </div>
+    </section>
+
+    <!-- ? ===== Create End ===== -->
+
+    <!-- ! ====== Posts Start ====== -->
+    <div class="posts"></div>
+    <!-- ? ====== Posts End ====== -->
+
+    <!--! main-modal start -->
+    <div class="main-modal">
+      <div>
+        <input
+          type="url"
+          class="posts__edit_img"
+          placeholder="URL фотографии"
+        />
+        <br />
+        <input type="text" class="posts__edit_txt" placeholder="Описание" />
+        <br />
+        <button class="posts__edit_btn">Изменить</button>
+        <button class="posts__close_btn">Закрыть</button>
+      </div>
+    </div>
+    <!--? main-modal end -->
+
+    <!-- ! ========== Paginate Start ====== -->
+    <div class="paginate">
+      <button id="prev-btn">prev</button>
+      <button id="next-btn">next</button>
+    </div>
+    <!-- ? ========== Paginate End ====== -->
     <script src="./js/main.js"></script>
   </body>
 </html>
